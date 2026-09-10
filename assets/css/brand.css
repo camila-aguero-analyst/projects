@@ -324,6 +324,15 @@ a:hover {
 	aspect-ratio: 16 / 9;
 }
 
+.premium-projects .actions.special {
+	flex-wrap: wrap;
+	gap: 0.75rem 1rem;
+}
+
+.premium-projects .actions.special li {
+	padding-left: 0;
+}
+
 .button,
 input[type="submit"],
 button {
