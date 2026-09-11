@@ -1,0 +1,11 @@
+:root { --ink: #37242b; --deep: #241519; --rose: #d69f98; --gold: #c8aa46; --paper: #fbf9f7; --white: #fff; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; background: linear-gradient(135deg, rgba(37,21,25,.88), rgba(37,21,25,.5)), url('../../images/lumina-brand-lift-cover.jpg') center/cover fixed; color: var(--white); font-family: Arial, Helvetica, sans-serif; }
+.project-page { min-height: 100vh; padding: clamp(1.4rem, 5vw, 4.5rem); display: grid; align-content: center; }
+.back-link { position: absolute; top: clamp(1.2rem, 4vw, 3rem); color: var(--white); font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+.project-card { width: min(48rem, 100%); padding: clamp(2rem, 6vw, 5rem); border: 1px solid rgba(255,255,255,.28); background: rgba(55,36,43,.78); box-shadow: 1rem 1rem 0 rgba(214,159,152,.72); backdrop-filter: blur(7px); }
+.eyebrow { margin: 0 0 1rem; color: #f0c5bd; font-size: .74rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+h1 { margin: 0 0 1.5rem; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(3rem, 7vw, 6.7rem); font-weight: 500; letter-spacing: -.06em; line-height: .92; } h1 em { color: #f0c3bd; font-style: normal; }
+.intro { max-width: 35rem; color: #faeeeb; font-size: clamp(1.05rem, 2vw, 1.25rem); line-height: 1.55; }
+.resource-links { display: grid; gap: .8rem; margin-top: 2.3rem; }.resource-links a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.15rem; border: 1px solid rgba(255,255,255,.5); background: rgba(255,255,255,.08); color: var(--white); font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; transition: .2s ease; }.resource-links a:hover { transform: translateX(.3rem); border-color: var(--gold); background: var(--gold); color: var(--deep); }.resource-links span { font-size: 1.1rem; }
+@media (max-width: 560px) { body { background-attachment: scroll; }.project-page { align-content: end; padding: 1.15rem; }.project-card { padding: 2rem 1.35rem; box-shadow: .45rem .45rem 0 rgba(214,159,152,.72); }.back-link { left: 1.15rem; } h1 { font-size: clamp(2.75rem, 15vw, 4.3rem); } }
