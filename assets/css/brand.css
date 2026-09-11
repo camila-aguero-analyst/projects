@@ -294,6 +294,7 @@ a:hover {
 
 .premium-projects .image.fit,
 .credential-grid .image.fit {
+	background: linear-gradient(135deg, rgba(247, 220, 229, 0.46), rgba(207, 238, 250, 0.46));
 	border-radius: 8px;
 	overflow: hidden;
 	box-shadow: 0 0.75rem 1.7rem rgba(67, 48, 82, 0.12);
@@ -301,9 +302,9 @@ a:hover {
 
 .premium-projects .image.fit img,
 .credential-grid .image.fit img {
-	aspect-ratio: 16 / 10;
+	aspect-ratio: 16 / 9;
 	height: auto;
-	object-fit: cover;
+	object-fit: contain;
 	width: 100%;
 }
 
@@ -391,7 +392,7 @@ button.primary {
 
 .project-detail .image.main img {
 	max-height: 34rem;
-	object-fit: cover;
+	object-fit: contain;
 	width: 100%;
 }
 
