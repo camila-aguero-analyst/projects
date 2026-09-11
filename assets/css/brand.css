@@ -521,6 +521,23 @@ button.primary {
 		background: linear-gradient(135deg, rgba(247, 220, 229, 0.42), rgba(207, 238, 250, 0.42));
 	}
 
+	.premium-projects .actions.special {
+		gap: 0.65rem;
+		grid-template-columns: 1fr;
+		margin: 1.5rem 0 0;
+		width: 100%;
+	}
+
+	.premium-projects .actions.special li {
+		margin: 0;
+		width: 100%;
+	}
+
+	.premium-projects .actions.special .button {
+		min-height: 3rem;
+		padding: 0 0.8rem;
+	}
+
 	.tool-list,
 	.project-meta {
 		justify-content: flex-start;
