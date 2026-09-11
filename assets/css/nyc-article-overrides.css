@@ -1,0 +1,6 @@
+.finding-card strong {
+  max-inline-size: 100%;
+  font-size: clamp(2.25rem, 3.25vw, 3.65rem);
+  line-height: 1.02;
+  overflow-wrap: anywhere;
+}
