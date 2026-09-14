@@ -7,6 +7,7 @@
   <title>NYC Rent Burden Analysis | Camila Aguero</title>
   <link rel="stylesheet" href="assets/css/nyc-article.css?v=2" />
   <link rel="stylesheet" href="assets/css/rent-burden-article.css?v=1" />
+  <link rel="stylesheet" href="assets/css/rent-burden-tract-map.css" />
   <style>.rent-burden-article .hero-image { background-image: url('images/nyc-rent-burden-analysis-cover.avif?v=2'); }</style>
 </head>
 <body class="rent-burden-article">
@@ -23,7 +24,7 @@
 
     <section class="section geographic-section"><div class="story-heading"><p class="eyebrow">2 · Geography</p><h2>The geography tells another part of the story</h2><p>Looking at the same numbers geographically makes the differences across the city easier to see.</p></div><div class="borough-map" data-borough-map aria-label="Interactive map of NYC borough rent burden rates"><p class="map-loading">Loading borough map…</p></div><p class="map-instruction">Hover over a borough to view details.</p><p class="map-followup">The borough map shows broad patterns of rent burden, but boroughs are large and diverse. A single borough-wide percentage can hide substantial differences between smaller areas.</p><p class="map-transition">That led me to look deeper.</p></section>
 
-    <section class="section tract-section"><div class="story-heading"><p class="eyebrow">3 · Census-tract detail</p><h2>Zooming in reveals much larger disparities</h2><p>I analyzed NYC at the census-tract level, allowing me to examine much smaller geographic areas within each borough.</p><p>To avoid rankings being dominated by very small populations, I focused on census tracts with at least 400 renter households.</p></div><div class="map-placeholder" role="note" aria-label="Future interactive census tract map placeholder"><span>Future interactive census tract map</span></div><p class="map-instruction">Hover over a census tract to explore local rent burden.</p><p class="map-followup">At this level, the differences become much more pronounced.</p><p class="map-transition">While the highest borough-wide rate was 56.9%, some individual census tracts had rent-burden rates exceeding 80%.</p></section>
+    <section class="section tract-section"><div class="story-heading"><p class="eyebrow">3 · Census-tract detail</p><h2>Zooming in reveals much larger disparities</h2><p>I analyzed NYC at the census-tract level, allowing me to examine much smaller geographic areas within each borough.</p><p>To avoid rankings being dominated by very small populations, I focused on census tracts with at least 400 renter households.</p></div><div class="tract-map" data-tract-map aria-label="Interactive map of NYC census tract rent burden rates"><p class="map-loading">Loading census tract map…</p></div><p class="map-instruction">Hover over a census tract to explore local rent burden.</p><p class="map-followup">At this level, the differences become much more pronounced.</p><p class="map-transition">While the highest borough-wide rate was 56.9%, some individual census tracts had rent-burden rates exceeding 80%.</p></section>
 
     <section class="section story-section"><div class="story-heading"><p class="eyebrow">4 · Highest-burden tracts</p><h2>In some areas, more than 8 in 10 renters are rent-burdened</h2></div><figure><img src="images/rent-burden-article/top-tracts.jpeg" alt="Bar chart of the top 10 NYC census tracts with the highest rent burden" /><figcaption>Top 10 NYC census tracts by rent-burden rate, limited to tracts with 400 or more renter households.</figcaption></figure></section>
 
@@ -35,5 +36,6 @@
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script src="assets/js/nyc-article.js"></script>
   <script src="assets/js/rent-burden-map.js"></script>
+  <script src="assets/js/rent-burden-tract-map.js"></script>
 </body>
 </html>

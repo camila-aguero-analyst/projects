@@ -1,0 +1,12 @@
+.tract-map { position:relative; min-height:clamp(20rem,60vw,39rem); overflow:hidden; border:1px solid #c9d9e4; background:#fff; box-shadow:0 1rem 2rem rgba(6,38,83,.1); }
+.tract-map svg { display:block; width:100%; height:auto; }
+.tract-shapes path { cursor:pointer; stroke:rgba(247,250,251,.8); stroke-width:.35; vector-effect:non-scaling-stroke; transition:filter .18s ease, stroke .18s ease, stroke-width .18s ease; }
+.tract-shapes path.is-active, .tract-shapes path.is-selected { stroke:#062653; stroke-width:1.6; filter:brightness(.88); }
+.tract-borough-boundaries path { fill:none; pointer-events:none; stroke:#062653; stroke-linejoin:round; stroke-width:1.7; vector-effect:non-scaling-stroke; }
+.tract-map-legend text { fill:#243e55; font-size:13px; font-weight:700; }
+.tract-map-legend text:first-child { font-size:14px; }
+.tract-tooltip { position:fixed; z-index:30; display:grid; gap:.32rem; max-width:min(19rem,calc(100vw - 1.5rem)); padding:1rem 1.1rem; border:1px solid rgba(6,38,83,.16); background:rgba(255,255,255,.98); box-shadow:0 .9rem 2rem rgba(6,38,83,.18); color:#263c50; font-size:.8rem; line-height:1.35; opacity:0; pointer-events:none; transition:opacity .12s ease; }
+.tract-tooltip.is-visible { opacity:1; }
+.tract-tooltip strong { margin-bottom:.1rem; color:#062653; font-family:Georgia,serif; font-size:1.1rem; }
+.tract-tooltip b { margin-bottom:.15rem; color:#536478; font-size:.78rem; }
+@media (max-width:560px) { .tract-map { min-height:20rem; }.tract-map-legend { transform:translate(20px,34px) scale(.9); transform-origin:top left; } }
